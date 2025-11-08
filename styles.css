@@ -82,6 +82,7 @@ body{
   font-size: .9rem;
   color: var(--ink-soft);
 }
+.card p, .card ul { max-width: 50ch; }  /* or 50em if you prefer */
 
 
 /* Floats (requirement) */
@@ -159,8 +160,7 @@ img {
 
 /* Mobile overrides: stack images/text */
 @media (max-width: 700px) {
-.card .float-left,
-  .card .float-right{
+  .card figure{
     float:none;
     margin:0 0 .75rem 0;
     display:block;
